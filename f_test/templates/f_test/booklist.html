@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <header>
+      
+    </header>
+    <div class="main">
+        {% for i in x %}
+            <h4>id: {{i.id }}</h4>
+            <h4>タイトル: {{ i.bookname }}</h4>
+            <h4>文学賞名: {{ i.award }}</h4>
+            <h4>受賞年: {{ i.year }}</h4>
+            <br>
+        {% endfor %}     
+    </div>
+    <footer>
+      
+    </footer>
+  </body>
+</html>
